@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who is me?</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who is me?</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- Menu Navigasi -->
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="about.html">About Me</a>
-    </nav>
+<body class="bg-gray-100 text-gray-800 transition duration-500" id="body">
 
-    <!-- Konten Utama -->
-    <section class="profile">
-        <h1>Selamat Datang di Web Saya</h1>
-        <img src="foto.jpg" alt="Foto Saya" width="200">
-        <p><strong>Nama:</strong> Wildanun Mukhallid</p>
-        <p><strong>NPM:</strong> 2408007010048</p>
-    </section>
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 text-white flex justify-center gap-6 shadow">
+    <a href="index.html" class="hover:text-yellow-300 font-bold">Home</a>
+    <a href="about.html" class="hover:text-yellow-300 font-bold">About Me</a>
+   
+  </nav>
 
-    <!-- List Data -->
-    <section>
-        <h2>Hobi Saya</h2>
-        <ul>
-            <li>Membaca</li>
-            <li>Bermain Game</li>
-            <li>Koding</li>
-        </ul>
-    </section>
+  <!-- Profile -->
+  <section class="text-center mt-8">
+    <h1 class="text-3xl font-bold">Selamat Datang di Web Saya</h1>
+    <img src="foto.jpg" alt="Foto Saya" class="mx-auto mt-4 w-40 h-40 object-cover rounded-full border-4 border-blue-400 shadow">
+    <p class="mt-2"><span class="font-semibold">Nama:</span> Wildanun Mukhallid</p>
+    <p><span class="font-semibold">NPM:</span> 2408007010048</p>
+  </section>
 
-    <!-- Tabel Data -->
-    <section>
-        <h2>Riwayat Pendidikan</h2>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Tahun</th>
-                <th>Sekolah</th>
-            </tr>
-            <tr>
-                <td>2009 - 2015</td>
-                <td>MIN 1 Langsa</td>
-            </tr>
-            <tr>
-                <td>2015 - 2018</td>
-                <td>MTSn MUQ Langsa</td>
-            </tr>
-            <tr>
-                <td>2018 - 2021</td>
-                <td>SMA Cut Nyak Dhien Langsa</td>
-            </tr>
-            <tr>
-                <td>2024 - Sekarang</td>
-                <td>Universitas Samudra</td>
-            </tr>
-        </table>
-    </section>
+  <!-- Hobi -->
+  <section class="max-w-xl mx-auto mt-8 bg-white shadow rounded-lg p-6">
+    <h2 class="text-2xl font-semibold mb-4">Hobi Saya</h2>
+    <ul class="list-disc list-inside text-left">
+      <li>Membaca</li>
+      <li>Bermain Game</li>
+      <li>Koding</li>
+    </ul>
+  </section>
+
+  <!-- Pendidikan -->
+  <section class="max-w-xl mx-auto mt-8 bg-white shadow rounded-lg p-6">
+    <h2 class="text-2xl font-semibold mb-4">Riwayat Pendidikan</h2>
+    <table class="table-auto border-collapse border border-gray-400 w-full text-left">
+      <thead class="bg-blue-200">
+        <tr>
+          <th class="border border-gray-400 px-4 py-2">Tahun</th>
+          <th class="border border-gray-400 px-4 py-2">Sekolah</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border px-4 py-2">2009 - 2015</td>
+          <td class="border px-4 py-2">MIN 1 Langsa</td>
+        </tr>
+        <tr class="bg-gray-100">
+          <td class="border px-4 py-2">2015 - 2018</td>
+          <td class="border px-4 py-2">MTSn MUQ Langsa</td>
+        </tr>
+        <tr>
+          <td class="border px-4 py-2">2018 - 2021</td>
+          <td class="border px-4 py-2">SMA Cut Nyak Dhien Langsa</td>
+        </tr>
+        <tr class="bg-gray-100">
+          <td class="border px-4 py-2">2024 - Sekarang</td>
+          <td class="border px-4 py-2">Universitas Syiah Kuala</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
